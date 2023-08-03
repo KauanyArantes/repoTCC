@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:playground/view/material.dart';
 import 'package:playground/view/principal.dart';
+import 'package:playground/view/projeto.dart';
 
 //indice de seleção da tela
 int _selectedIndex = 0;
@@ -10,6 +11,7 @@ int _selectedIndex = 0;
 List<Widget> _stOptions = <Widget>[
   HomePage(),
   ExemplosPage(),
+  ProjetoPage(),
 ];
 
 class Menu extends StatefulWidget {

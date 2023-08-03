@@ -9,7 +9,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   List<bool> _filtrosSelecionados = [false, false, false];
-
   List<Widget> _buildFiltros() {
     List<Widget> filtros = [];
     List<String> niveis = ['Nível 1', 'Nível 2', 'Nível 3'];
