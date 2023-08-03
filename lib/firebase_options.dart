@@ -17,21 +17,21 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
+        return android;
+      case TargetPlatform.iOS:
         throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for android - '
+          'DefaultFirebaseOptions have not been configured for ios - '
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
-      case TargetPlatform.iOS:
-        return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -49,23 +49,21 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAZOe24e75DngrhfeCk1j0FDK3oOetksQg',
-    appId: '1:572718609860:ios:881e384bd4f0e78602a091',
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyD8gcgj-OkhQWlLsTtrSSvBNyddPMn6dD4',
+    appId: '1:572718609860:web:96bfaac039e3af0902a091',
     messagingSenderId: '572718609860',
     projectId: 'app-scratch-89982',
+    authDomain: 'app-scratch-89982.firebaseapp.com',
     storageBucket: 'app-scratch-89982.appspot.com',
-    iosClientId: '572718609860-rg8vsvdrk3v36ieof1dvns9t3kcd2fm8.apps.googleusercontent.com',
-    iosBundleId: 'com.example.playground',
+    measurementId: 'G-6GXMZMDHLS',
   );
 
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAZOe24e75DngrhfeCk1j0FDK3oOetksQg',
-    appId: '1:572718609860:ios:446d267690a3029f02a091',
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyA1TTI5ASrrC3GCQt5qG1QbS-xs9LK8-74',
+    appId: '1:572718609860:android:4f65a399c6c9d44802a091',
     messagingSenderId: '572718609860',
     projectId: 'app-scratch-89982',
     storageBucket: 'app-scratch-89982.appspot.com',
-    iosClientId: '572718609860-nvufjd1o8q2c2or0vbajgaa856ac04et.apps.googleusercontent.com',
-    iosBundleId: 'com.example.playground.RunnerTests',
   );
 }

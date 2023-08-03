@@ -8,6 +8,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  var db = FirebaseFirestore.instance;
   List<bool> _filtrosSelecionados = [false, false, false];
 
   List<Widget> _buildFiltros() {

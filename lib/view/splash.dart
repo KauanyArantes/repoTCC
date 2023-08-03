@@ -41,7 +41,7 @@ class _SplashState extends State<Splash> {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFFFCB1B1),
+              Colors.pink.shade300,
               Color(0xFFFFF0F0),
             ],
             begin: Alignment.topLeft,
@@ -91,7 +91,7 @@ class _SplashState extends State<Splash> {
 class SquarePainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    final paint = Paint()..color = Colors.pink.shade200;
+    final paint = Paint()..color = Colors.pink.shade100;
     final squareSize = size.width / 20;
     for (double x = 0; x < size.width; x += squareSize) {
       for (double y = 0; y < size.height; y += squareSize) {
