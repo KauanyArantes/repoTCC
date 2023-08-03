@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "572718609860",
+    "project_id": "app-scratch-89982",
+    "storage_bucket": "app-scratch-89982.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572718609860:android:4f65a399c6c9d44802a091",
+        "android_client_info": {
+          "package_name": "com.example.playground"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572718609860-flrdcs8k5k77ot2n05ad14g0qckbvb8e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1TTI5ASrrC3GCQt5qG1QbS-xs9LK8-74"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572718609860-flrdcs8k5k77ot2n05ad14g0qckbvb8e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "572718609860-nvufjd1o8q2c2or0vbajgaa856ac04et.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.playground.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
